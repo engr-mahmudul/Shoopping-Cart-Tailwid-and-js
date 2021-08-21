@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Pro</title>
+    <!-- Tailwind CDN Link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="mx-auto grid grid-cols-2 mt-8">
+            <div class="flex justify-center">
+                <img src="images/mac.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-4xl"> Customize your Blue 24-inch<br> iMac with Apple M1 chip.</h1>
+                <p class="pr-6">Apple M1 chip with 8-core CPU with 4 preformance cores and 4 efficiency cores, 7-core GPU,
+                    and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+                    Magic Keyboard-US English</p>
+                <section class="mt-8">
+                    <h3 class="font-semibold mb-2">Memory</h3>
+                    <button id="8gb-memory-button" class="border-2 px-2 border-black rounded-lg mr-2">8 GB unidfied Memory</button>
+                    <button id="16gb-memory-button" class="border-2 px-2 border-black rounded-lg mr-2">16 Gb unified Memory</button>
+                </section>
+                <section class="mt-8">
+                    <h3 class="font-semibold mb-2">Storage</h3>
+                    <button id="256gb-storage-button" class="border-2 px-2 border-black rounded-lg mr-2">256 GB SSD storage</button>
+                    <button id="512gb-storage-button" class="border-2 px-2 border-black rounded-lg mr-2">512 GB SSD storage</button>
+                    <button id="1024gb-storage-button" class="border-2 px-2 border-black rounded-lg mr-2">1024 GB SSD storage</button>
+                </section>
+                <section class="mt-8">
+                    <h3 class="font-semibold mb-2">Choose your delevery option</h3>
+                    <button id="25Aug-delevry-button" class="border-2 px-2 border-black rounded-lg mr-2">Friday,Aug 25 Free Prime Deliver</button>
+                    <button id="21Aug-delevry-button" class="border-2 px-2 border-black rounded-lg mr-2">Friday,Aug 21 Deliver Charge $20</button>
+                </section>
+                <section class="w-6/12 grid grid-cols-2 mt-8">
+                    <div>
+                        <h2 class="font-bold">Best Price</h2>
+                        <hr>
+                        <h2 class="font-bold">Extra Memory Cost</h2>
+                        <hr>
+                        <h2 class="font-bold">Extra Storage Cost</h2>
+                        <hr>
+                        <h2 class="font-bold">Delevery Charge</h2>
+                        
+                        <hr class="for-hr">
+                        <h2 class="font-bold">Total Price</h2>
+                    </div>
+                    <div>
+                        <h2 class="pl-16 font-bold">$ <span id="net-charge">1299</span></h2><hr>
+                        <h2 class="pl-16 font-bold">$ <span id="extra-memory-charge">0</span></h2><hr>
+                        <h2 class="pl-16 font-bold">$<span id="extra-storage-charge">0</span></h2><hr>
+                        <h2 class="pl-16 font-bold">$<span id="extra-delevery-charge">0</span></h2>
+                        <hr class="for-hr">
+                        <h2 class="pl-16 font-bold">$ <span id="total-charge">1299</span></h2><hr>
+                    </div>
+                    
+    
+                </section>
+                <section class="my-8">
+                    <h3>Add Promo code</h3>
+                    <input id="promo-input" class="border text-lg border-black pl-2" type="text">
+                    <button id="promo-button" class="bg-red-600 px-2 py-1 rounded-md">Apply</button>
+                </section>
+            </div>
+        </section>
+        <section >
+            <hr class="for-hr">
+            <h1 class="text-4xl text-center p-4">Total : $<span id="grand-total">1299</span></h1>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
